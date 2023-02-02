@@ -10,6 +10,7 @@ sum.addEventListener('click', (e) => {
     worker.postMessage('hello');
 });
 
+// 
 worker.onmessage = function(message){
     alert(`The final sum is ${message.data}`);
 };
